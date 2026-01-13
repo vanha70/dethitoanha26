@@ -30,13 +30,27 @@ import { Exam, Room, Submission, StudentInfo, User, Role, Question } from '../ty
 
 // ============ FIREBASE CONFIG ============
 const firebaseConfig = {
-  apiKey: "THỰC TẾ",
-  authDomain: "THỰC TẾ",
-  projectId: "stuchat-project",
-  storageBucket: "THỰC TẾ",
-  messagingSenderId: "THỰC TẾ",
-  appId: "THỰC TẾ",
-  measurementId: "THỰC TẾ"
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBUVWsFKsflkq-AB-z2Ilvf-eeJ-JKQtsM",
+  authDomain: "dethtoanha26.firebaseapp.com",
+  projectId: "dethtoanha26",
+  storageBucket: "dethtoanha26.firebasestorage.app",
+  messagingSenderId: "701231127326",
+  appId: "1:701231127326:web:7a04dc5d44c435cdee070f",
+  measurementId: "G-C5GNFC9VX4"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 };
 
 // Initialize Firebase
